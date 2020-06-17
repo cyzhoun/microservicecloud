@@ -57,4 +57,7 @@ public class Dept implements Serializable {
         this.dname = dname;
         this.db_source = db_source;
     }
+
+    public Dept() {
+    }
 }
