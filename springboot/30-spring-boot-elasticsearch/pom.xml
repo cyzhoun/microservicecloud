@@ -6,7 +6,7 @@
 		<version>1.5.10.RELEASE</version>
 	</parent>
 	<groupId>cn.test</groupId>
-	<artifactId>10-spring-boot-view-thymeleaf</artifactId>
+	<artifactId>30-spring-boot-elasticsearch</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<!-- 修改jdk版本 -->

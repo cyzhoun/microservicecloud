@@ -6,7 +6,7 @@
     <version>1.5.10.RELEASE</version>
   </parent>
   <groupId>cn.test</groupId>
-  <artifactId>09-spring-boot-view-freemarker</artifactId>
+  <artifactId>25-spring-boot-scheduled</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
   <!-- jdk -->
