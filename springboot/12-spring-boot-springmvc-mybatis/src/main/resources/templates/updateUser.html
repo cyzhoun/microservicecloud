@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>更新用户信息</title>
+</head>
+<body>
+	<form th:action="@{/users/editUser}" method="post">
+		<input type="hidden" name="id" th:field="${user.id}" />
+		用户姓名:<input type="text" name="id" th:field="${user.name}" />
+		用户年龄:<input type="text" name="id" th:field="${user.age}" />
+		<input type="submit" value="确定" />
+	</form>
+</body>
+</html>

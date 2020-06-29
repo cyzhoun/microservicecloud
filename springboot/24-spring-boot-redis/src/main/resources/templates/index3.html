@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Age</th>
+		</tr>
+		
+		<tr th:each="user : ${userList}">
+			<th th:text="${user.userid}">Id</th>
+			<th th:text="${user.username}">Name</th>
+			<th th:text="${user.userage}">Age</th>
+		</tr>
+	</table>
+	<hr/>
+	<table border="1">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Index</th>
+			<th>Count</th>
+			<th>Size</th>
+			<th>Even</th>
+			<th>Odd</th>
+			<th>First</th>
+			<th>Last</th>
+		</tr>
+		<tr th:each="u,var : ${userList}">
+			<td th:text="${u.userid}"></td>
+			<td th:text="${u.username}"></td>
+			<td th:text="${u.userage}"></td>
+			<td th:text="${var.index}"></td>
+			<td th:text="${var.count}"></td>
+			<td th:text="${var.size}"></td>
+			<td th:text="${var.even}"></td>
+			<td th:text="${var.odd}"></td>
+			<td th:text="${var.first}"></td>
+			<td th:text="${var.last}"></td>
+		</tr>
+	</table>
+</body>
+</html>

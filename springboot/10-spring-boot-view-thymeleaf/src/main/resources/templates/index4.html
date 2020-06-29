@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Age</th>
+		</tr>
+		<tr th:each="maps : ${userMap}">
+			<th th:each="entry:${maps}" th:text="${entry.value.userid}"></th>
+			<th th:each="entry:${maps}" th:text="${entry.value.username}"></th>
+			<th th:each="entry:${maps}" th:text="${entry.value.userage}"></th>
+		</tr>
+	</table>
+
+</body>
+</html>

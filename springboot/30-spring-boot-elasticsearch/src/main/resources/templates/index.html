@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<span th:text="Hello"></span>
+	<hr/>
+	<span th:text="${message}"></span>
+	<hr/>
+	<input type="text" name="name" th:value="${message}">
+	<hr/>
+	<span th:text="${#strings.isEmpty(message)}"></span>
+	<hr/>
+	<span th:text="${#strings.contains(message,'9')}"></span>
+	<span th:text="${#strings.contains(message,'T')}"></span>
+	<hr/>
+	<span th:text="${#strings.startsWith(message,'a')}"></span>
+	<span th:text="${#strings.startsWith(message,'T')}"></span>
+	<hr/>
+	<span th:text="${#strings.endsWith(message,'a')}"></span>
+	<span th:text="${#strings.endsWith(message,'案例')}"></span>
+	<hr color="yellow" />
+	<span th:text="${#strings.length(message)}"></span>
+	<hr color="red" />
+	<span th:text="${#strings.indexOf(message,'h')}"></span>
+	<hr color="blue" />
+	<span th:text="${#strings.substring(message,12)}"></span>
+	<hr color="black" />
+	<span th:text="${#strings.substring(message,3,12)}"></span>
+	<hr color="green" />
+	<span th:text="${#strings.toUpperCase(message)}"></span>
+	<hr color="write" />
+	<span th:text="${#strings.toLowerCase(message)}"></span>
+	<hr color="red" />
+	<span th:text="${#dates.format(time)}"></span>
+	<hr color="green" />
+	<span th:text="${#dates.format(time,'yyyy-MM-dd HH:mm:ss')}"></span>
+	<hr color="write" />
+	<span th:text="${#dates.year(time)}"></span>
+	<hr color="red" />
+	<span th:text="${#dates.month(time)}"></span>
+	<hr color="green" />
+	<span th:text="${#dates.day(time)}"></span>
+</body>
+</html>
